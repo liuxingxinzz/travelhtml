@@ -1,0 +1,96 @@
+<!DOCTYPE html>  
+<html> 
+ 
+<head>  
+
+<title>个人中心</title>  
+	<link rel="shortcut icon" href="../图片/1.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<script type="text/javaScript" src="../js/find.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/myself.css">
+
+</head>  
+
+<body>  
+ 
+ <div id="up">
+	<div id="导航栏">
+		<span><a href="../index.html">主页</a></span>
+		<span><a href="精彩视频.html">精彩视频</a></span>
+		<span><a href="个人中心.html">个人中心</a></span>
+		<span><a href="作者的话.html">作者的话</a></span>
+		<span><a href="联系我们.html">联系我们</a></span>
+		<form>
+		<div class="chazhao">
+			<input id="upinput" type="search" placeholder="请输入要查找的内容"/>
+			<input id="find" type="button" onclick="findText()" value="查找"/>
+		</div>
+		</form>
+	</div>
+</div>
+
+<video class="bj" src="../图片/背景.mp4" autoplay="autoplay" muted="muted" loop="loop"></video>	
+
+<div class="bd">
+	<div class="bdin">
+	<form id="tb">
+		<div class="one">
+			<span>用户登录</span>
+		</div>
+		<div class="two">
+			<table  align="center" >
+			
+				<tr>
+					<td>用户名:</td>
+					<td><input class="round" id="uname" type="text" size="30" maxlength="30" required="required" placeholder="用户名由字母、数字、符号组成" autofocus="autofocus">
+						<span class="dian">*</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>密码:</td>
+					<td><input class="round" id="upw" type="password" size="30" maxlength="30" required="required" placeholder="密码由字母、数字、符号组成">
+						<span class="dian">*</span>
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+			<br>
+			
+			<div class="button">
+				<input type="submit" class="round2" id="dl" style="width:50px; height:30px; font-size:14px;" value="登录">
+				<input type="reset" class="round2" style="width:50px; height:30px; font-size:14px;" value="清空">
+			</div>
+			
+			<div class="create">
+				<a href="注册.html"><span class="wenzi">没有账号?点此注册</span></a>
+			</div>
+	</form>
+	</div>
+</div>
+
+<script>    
+	document.getElementById("tb").addEventListener("submit", function(event){    
+	event.preventDefault();    
+    
+	let name = document.getElementById("uname").value;    
+	let email = document.getElementById("upw").value;    
+    
+	if(name == "" || email == "") {    
+    alert("请填写所有字段");    
+	} 
+	else {    
+    alert("账号密码输入正确，请再次点击”登录“按钮");
+	document.getElementById("dl").onclick = function() { window.open("ggbond66.html", '_self');};	
+	}  
+});    
+</script> 
+
+<div class="end">
+	<span><br>Copyright &copy; 2023 LXX制作</span>
+</div>
+
+</body>  
+
+</html>

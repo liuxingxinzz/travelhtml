@@ -1,0 +1,39 @@
+.out{
+	width:100%;
+	height:760px;
+	position: relative;  
+	overflow:auto;
+}
+	
+.wb{
+	position:center;
+	margin:0 auto;
+	margin-top:80px;
+	padding:50px;
+	width:700px;
+	height:500px;
+	text-align:justify;
+	overflow:auto;
+	background-color:#faf9de;
+
+}
+			
+.txt{
+	text-indent:2em;
+	letter-spacing:0.5em;
+	line-height:2em;
+	font-size:25px;
+	font-family:楷体;
+}
+			
+.top{
+	font-size:25px;
+	font-family:楷体;
+	text-align:left;
+}
+			
+.down{
+	font-size:25px;
+	font-family:楷体;
+	text-align:right;
+}

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>      
+<html>      
+<head>      
+  <title>begin</title>      
+</head>      
+<body>      
+	<div align="center">
+	<img id="begin" src="图片/begin.gif" />  
+	</div>
+	
+	<script>      
+		var gifElement = document.getElementById('begin');      
+		var gifUrl = 'index.html'; // 替换为你想要跳转的网页URL      
+		var duration = 6000; // 指定GIF的播放时长（以毫秒为单位）      
+		gifElement.addEventListener('load', function() {      
+		// 设置定时器，在指定的时间后跳转到另一个网页      
+		setTimeout(function() {     
+			window.location.href = gifUrl;     
+		}, duration);     
+		});      
+	</script>      
+</body>      
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>  
+<html> 
+ 
+<head>  
+
+<title>联系我们</title>  
+	<link rel="shortcut icon" href="../图片/1.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<script type="text/javaScript" src="../js/find.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/myself.css">
+
+</head>  
+
+<body>  
+ 
+ <div id="up">
+	<div id="导航栏">
+		<span><a href="../index.html">主页</a></span>
+		<span><a href="精彩视频.html">精彩视频</a></span>
+		<span><a href="个人中心.html">个人中心</a></span>
+		<span><a href="作者的话.html">作者的话</a></span>
+		<span><a href="联系我们.html">联系我们</a></span>
+		<form>
+		<div class="chazhao">
+			<input id="upinput" type="search" placeholder="请输入要查找的内容"/>
+			<input id="find" type="button" onclick="findText()" value="查找"/>
+		</div>
+		</form>
+	</div>
+</div>
+
+<video class="bj" src="../图片/背景.mp4" autoplay="autoplay" muted="muted" loop="loop"></video>	
+
+<div class="bd">
+	<div class="bdin">
+	<form id="tb">
+		<div class="one">
+			<span>联系我们</span>
+		</div>
+		
+		<div class="two">
+			<table  align="center">
+			
+				<tr>
+					<td>您的邮箱:</td>
+					<td><input class="round" id="inputemail" type="email" name="uemail" size="30" maxlength="30" required="required" placeholder="以便后续我们联系您" autofocus="autofocus">
+						<span class="dian">*</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>您的问题:</td>
+					<td><textarea class="round" id="inputproblem" name="question" rows="5" cols="30" required="required" ></textarea>
+						<span class="dian">*</span>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>附件:</td>
+					<td><input type="file" name="file">
+					</td>
+				</tr>
+			</table>
+		</div>
+				
+			<br>
+			<div class="button">
+				<input class="round2" type="submit" style="width:50px; height:30px; font-size:14px;" value="提交" >
+				<input class="round2" type="reset" style="width:50px; height:30px; font-size:14px;" value="清空" >
+			</div>
+			<br>
+	</div>
+</div>
+<script>  
+  document.addEventListener("DOMContentLoaded", function() {  
+    var gifUrl = '联系我们.html';  
+    var form = document.getElementById("tb");  
+    var emailInput = document.getElementById("inputemail");  
+    var problemInput = document.getElementById("inputproblem");  
+  
+    form.addEventListener("submit", function(event) {  
+      event.preventDefault();  
+        
+      var email = emailInput.value.trim();  
+      var problem = problemInput.value.trim();  
+        
+      if (email === "" || problem === "") {  
+        alert("请填写所有字段");  
+      } else {  
+        alert("提交成功！感谢您的提交！");  
+        window.location.href = gifUrl;  
+        form.reset();  
+      }  
+    });  
+  });  
+</script>
+<div class="end">
+	<span><br>Copyright &copy; 2023 LXX制作</span>
+</div>
+
+</body>  
+
+</html>

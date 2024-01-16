@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+	<title>首页</title>
+	<link rel="shortcut icon" href="图片/1.png" type="image/x-icon">
+	<meta charset="UTF-8">
+	
+
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	
+	<script type="text/javaScript" src="js/find.js"></script>
+	<script type="text/javaScript" src="js/图片抽取.js"></script>
+</head>
+
+<body>
+<a name="top"></a>
+
+<video class="bj" src="图片/背景.mp4" autoplay="autoplay" muted="muted" loop="loop"></video>	
+<a href="#top"><image class="shang" src="图片/顶部.jpg" /></a>
+<a href="#end"><image class="xia" src="图片/底部.jpg" /></a>
+
+<div id="up">
+	<div id="导航栏">
+		<span><a href="index.html">主页</a></span>
+		<span><a href="home/精彩视频.html">精彩视频</a></span>
+		<span><a href="home/个人中心.html">个人中心</a></span>
+		<span><a href="home/作者的话.html">作者的话</a></span>
+		<span><a href="home/联系我们.html">联系我们</a></span>
+		<form>
+			<div class="chazhao">
+			<input id="upinput" type="search" placeholder="请输入要查找的内容" />
+			<input id="find" type="button" onclick="findText()" value="查找"/>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+<div class="one">		
+		<div class="one_cantent">
+			<a href="省份/吉林/白山市/白山市 .html" target="_blank"><img src="省份/吉林/白山市/图片/长白山.jpg"></a>
+			<a href="省份/新疆/博尔塔拉蒙古自治州/博尔塔拉蒙古自治州.html" target="_blank"><img src="省份/新疆/博尔塔拉蒙古自治州/图片/赛里木湖.jpg"></a>
+			<a href="省份/新疆/阿勒泰地区/阿勒泰地区.html" target="_blank"><img src="省份/新疆/阿勒泰地区/图片/喀纳斯.jpg"></a>
+			<a href="省份/甘肃/酒泉市/酒泉市.html" target="_blank"><img src="省份/甘肃/酒泉市/图片/月牙泉.jpg"></a>
+			<a href="省份/江西/萍乡市/萍乡市.html" target="_blank"><img src="省份/江西/萍乡市/图片/武功山.jpg"></a>
+			<a href="省份/山西/长治市/长治市.html" target="_blank"><img src="省份/山西/长治市/图片/八泉峡.jpg"></a>
+			<a href="省份/四川/甘孜藏族自治州/甘孜藏族自治州.html" target="_blank"><img src="省份/四川/甘孜藏族自治州/图片/稻城亚丁.jpg"></a>
+			<a href="省份/四川/甘孜藏族自治州/甘孜藏族自治州.html" target="_blank"><img src="省份/四川/甘孜藏族自治州/图片/鱼子西.jpg"></a>
+			<a href="省份/湖北/恩施土家族苗族自治州/恩施土家族苗族自治州.html" target="_blank"><img src="省份/湖北/恩施土家族苗族自治州/图片/屏山峡谷.jpg"></a>
+			<a href="省份/浙江/杭州市/杭州市.html" target="_blank"><img src="省份/浙江/杭州市/图片/西湖.jpg"></a>
+		</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p class="bt">热门景点</p>
+<br>
+
+
+
+
+<div class="抽取box">	
+	<div class="suiji"><img id="图片抽取" src="图片/封面.jpg" alt=""></div>
+	<button id="start" onclick="randomImage() ">点击开始</button>
+	<br><span style="color:#0ff;">(单击图片即可跳转)</span>
+</div>
+
+<br>
+
+<p class="bt">专题</p>
+
+
+<table class="zhuanti" align="center"> 
+
+	<tr>
+			<td><a href="专题/雪山.html" target="_blank">
+				<img src="省份/云南/迪庆藏族自治州/图片/梅里雪山.jpg" width="500" height="500" /></a>
+			</td>
+			
+			<td><a href="专题/湖泊.html" target="_blank">
+				<image src="省份/四川/阿坝藏族羌族自治州/图片/九寨沟.jpg" width="500" height="500" /></a>
+			</td>
+	</tr>
+	
+	<tr>
+		<td>雪山</td>
+		<td>湖泊</td>
+	</tr>
+	
+	<tr>
+		<td><a href="专题/山川.html" target="_blank">
+			<image src="省份/贵州/铜仁市/图片/梵净山.jpg" width="500" height="500" /></a>
+		</td>
+		
+		<td><a href="专题/岛屿.html" target="_blank">
+			<image src="省份/海南/三沙市/图片/西沙群岛.jpg" width="500" height="500" /></a>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>山川</td>
+		<td>岛屿</td>
+	</tr>
+	
+	<tr>
+		<td><a href="专题/古镇.html" target="_blank">
+			<image src="省份/浙江/嘉兴市/图片/西塘古镇.jpg" width="500" height="500" /></a>
+		</td>
+		
+		<td><a href="专题/西北.html" target="_blank">
+			<image src="省份/甘肃/张掖市/图片/七彩丹霞.jpg" width="500" height="500" /></a>
+		</td>
+	</tr>
+	
+	<tr>
+		<td>古镇</td>
+		<td>西北</td>
+	</tr>
+
+</table>
+
+
+
+
+
+<p class="bt">城市选择</p>
+<div class="sfbox">
+<p class="sf">
+	&nbsp;&nbsp;&nbsp;<a href="省份/安徽/安徽省.html" target="in">安徽省</a>	&nbsp;
+	<a href="省份/福建/福建省.html" target="in">福建省</a>	&nbsp;
+	<a href="省份/甘肃/甘肃省.html" target="in">甘肃省</a>	&nbsp;
+	<a href="省份/广东/广东省.html" target="in">广东省</a>	&nbsp;
+	<a href="省份/贵州/贵州省.html" target="in">贵州省</a>	&nbsp;
+	<a href="省份/海南/海南省.html" target="in">海南省</a>	&nbsp;
+	<a href="省份/河北/河北省.html" target="in">河北省</a>	&nbsp;
+	<a href="省份/河南/河南省.html" target="in">河南省</a>	&nbsp;
+	<a href="省份/黑龙江/黑龙江省.html" target="in">黑龙江省</a>&nbsp;
+	<a href="省份/湖北/湖北省.html" target="in">湖北省</a>	&nbsp;
+	<a href="省份/湖南/湖南省.html" target="in">湖南省</a>	&nbsp;
+	<a href="省份/吉林/吉林省.html" target="in">吉林省</a>	&nbsp;
+	<a href="省份/江苏/江苏省.html" target="in">江苏省</a>	&nbsp;
+	<a href="省份/江西/江西省.html" target="in">江西省</a>	&nbsp;
+	<a href="省份/辽宁/辽宁省.html" target="in">辽宁省</a>	&nbsp;
+	<a href="省份/青海/青海省.html" target="in">青海省</a>	&nbsp;
+	<a href="省份/山东/山东省.html" target="in">山东省</a>	&nbsp;
+	<a href="省份/山西/山西省.html" target="in">山西省</a>	&nbsp;
+	<a href="省份/陕西/陕西省.html" target="in">陕西省</a>	&nbsp;
+	<a href="省份/四川/四川省.html" target="in">四川省</a>	&nbsp;
+	<a href="省份/云南/云南省.html" target="in">云南省</a>	&nbsp;
+	<a href="省份/浙江/浙江省.html" target="in">浙江省</a>	&nbsp;
+	<a href="省份/台湾/台湾.html" target="in">台湾省</a>	&nbsp;
+	&nbsp;&nbsp;&nbsp;<a href="省份/重庆/重庆市.html" target="in">重庆市</a>&nbsp;
+	<a href="省份/北京/北京.html" target="in">北京市</a>	&nbsp;
+	<a href="省份/天津/天津.html" target="in">天津市</a>	&nbsp;
+	<a href="省份/上海/上海.html" target="in">上海市</a>	&nbsp;
+	<a href="省份/新疆/新疆.html" target="in">新疆维吾尔自治区</a>	&nbsp;
+	<a href="省份/内蒙古/内蒙古.html" target="in">内蒙古自治区</a>	&nbsp;
+	<a href="省份/宁夏/宁夏.html" target="in">宁夏回族自治区</a>	&nbsp;
+	<a href="省份/广西/广西.html" target="in">广西壮族自治区</a>	&nbsp;
+	<a href="省份/西藏/西藏.html" target="in">西藏自治区</a>	&nbsp;
+	<a href="省份/香港/香港.html" target="in">香港特别行政区</a>	&nbsp;
+	<a href="省份/澳门/澳门.html" target="in">澳门特别行政区</a>	&nbsp;
+	
+</p>
+<iframe class="s" src="home/空地区.html" name="in" width=99% height="50px"></iframe>
+</div>
+
+<div class="end">
+	<span><br>Copyright &copy; 2023 LXX制作</span>
+</div>
+
+<a name="end"></a>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.bt{
+	font-size:30px;
+	font-weight:bold;
+}
+
+img{
+	width:500px;
+	height:600px;
+}
+
+.txt{
+	
+	width:500px;
+	height:600px;
+	text-indent:2em;
+	text-align:justify;
+	overflow:auto;
+	border:4px solid #bff;
+}
+
+.add{
+	width:25px;
+	height:25px;
+	
+}
+
+.jd{
+	font-size:20px;
+}
